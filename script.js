@@ -1,2 +1,14 @@
-const words=["INNOVATION","FREQUENCY","TECHNOLOGY"];let i=0;const word=document.getElementById("word"),slider=document.querySelector(".slider"),labels=[...slider.querySelectorAll("span")];setInterval(()=>{word.animate([{opacity:1,transform:"translateY(0)"},{opacity:0,transform:"translateY(12px)"}],{duration:220}).finished.then(()=>{i=(i+1)%3;word.textContent=words[i];word.animate([{opacity:0,transform:"translateY(-12px)"},{opacity:1,transform:"translateY(0)"}],{duration:420});labels.forEach((x,n)=>x.classList.toggle("active",n===i));slider.style.setProperty("--x",((i+1)*33.333)+"%");slider.style.setProperty("after-width",((i+1)*33.333)+"%")})},3600);
-const menu=document.querySelector(".menu"),nav=document.querySelector("nav");menu.addEventListener("click",()=>nav.classList.toggle("open"));document.querySelectorAll("nav a").forEach(a=>a.addEventListener("click",()=>nav.classList.remove("open")));document.getElementById("year").textContent=new Date().getFullYear();
+const menu=document.querySelector('.menu-toggle');
+const links=document.querySelector('.nav-links');
+if(menu){
+  menu.addEventListener('click',()=>{
+    const open=links.classList.toggle('open');
+    menu.setAttribute('aria-expanded',open);
+  });
+}
+links?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')});
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+document.getElementById('year').textContent=new Date().getFullYear();
