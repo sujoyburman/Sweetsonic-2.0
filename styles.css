@@ -217,3 +217,88 @@ footer{border-top:1px solid var(--line);padding:28px 0}.footer-inner{display:fle
 @media(max-width:560px){
   .brand img{width:155px;max-height:56px}.section{padding:75px 0}.hero{min-height:auto}.hero-visual{min-height:350px}.visual-card{height:330px}.wave{height:130px}.micro-proof{flex-wrap:wrap}.frequency-strip{grid-template-columns:1fr}.frequency-strip div{border-right:0!important}.frequency-strip div:last-child{border-bottom:0}.footer-inner{align-items:flex-start;flex-direction:column}
 }
+
+/* SweetSonic v3.6 — MIDI Academy sub-pages + navigation */
+.nav-dropdown{position:relative;display:flex;align-items:center;height:82px}
+.nav-parent{display:flex;align-items:center;gap:5px}.nav-parent span{font-size:.75rem;color:#7f8c7b;transition:.2s}
+.nav-dropdown:hover .nav-parent,.nav-dropdown:focus-within .nav-parent{color:var(--green)}
+.nav-menu{position:absolute;top:72px;left:-12px;min-width:230px;padding:9px;background:rgba(8,11,8,.98);border:1px solid rgba(166,255,47,.2);border-radius:16px;box-shadow:0 25px 60px rgba(0,0,0,.5);opacity:0;visibility:hidden;transform:translateY(8px);transition:.2s;z-index:200}
+.nav-menu a{display:block;padding:11px 13px;border-radius:10px;color:#cfd8cb;font-size:.84rem}
+.nav-menu a:hover{background:rgba(166,255,47,.07);color:var(--green)}
+.nav-dropdown:hover .nav-menu,.nav-dropdown:focus-within .nav-menu{opacity:1;visibility:visible;transform:none}
+
+.page-hero{padding:100px 0 70px;border-bottom:1px solid var(--line);background:radial-gradient(circle at 78% 30%,rgba(166,255,47,.11),transparent 32%)}
+.page-hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center}
+.page-kicker{color:var(--green);font-size:.74rem;font-weight:900;letter-spacing:.16em;text-transform:uppercase}
+.page-hero h1{margin-top:15px}
+.page-hero .lead{max-width:700px}
+.page-visual{min-height:330px;border:1px solid rgba(166,255,47,.22);border-radius:30px;background:linear-gradient(145deg,#111710,#060806);position:relative;overflow:hidden;padding:25px}
+.page-visual:before{content:"";position:absolute;inset:20px;border:1px solid rgba(255,255,255,.06);border-radius:22px}
+.midi-console{position:absolute;inset:65px 35px 55px;display:grid;grid-template-columns:1fr 1fr;gap:15px;z-index:2}
+.midi-panel{border:1px solid rgba(166,255,47,.2);border-radius:16px;padding:15px;background:rgba(255,255,255,.025)}
+.midi-panel strong{color:var(--green);font-size:.8rem;letter-spacing:.1em}
+.midi-keys{display:flex;align-items:end;gap:3px;height:120px;margin-top:20px}
+.midi-keys i{display:block;flex:1;height:48%;background:#dce4d8;border-radius:0 0 3px 3px;animation:keyPulse 1.7s ease-in-out infinite}
+.midi-keys i:nth-child(2n){height:70%;animation-delay:-.3s}.midi-keys i:nth-child(3n){height:40%;animation-delay:-.7s}
+.pad-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin-top:25px}
+.pad-grid i{aspect-ratio:1;border:1px solid rgba(166,255,47,.3);border-radius:7px;background:rgba(166,255,47,.06);animation:padPulse 2s ease-in-out infinite}
+.pad-grid i:nth-child(2n){animation-delay:-.5s}.pad-grid i:nth-child(3n){animation-delay:-1s}
+@keyframes keyPulse{50%{transform:translateY(-6px);background:var(--green)}}@keyframes padPulse{50%{box-shadow:0 0 18px rgba(166,255,47,.25);background:rgba(166,255,47,.16)}}
+
+.subnav{border-bottom:1px solid var(--line);background:rgba(255,255,255,.018)}
+.subnav-inner{display:flex;gap:7px;overflow:auto;padding:12px 0;scrollbar-width:none}
+.subnav-inner::-webkit-scrollbar{display:none}
+.subnav-inner a{white-space:nowrap;padding:9px 13px;border:1px solid transparent;border-radius:999px;color:#9da89a;font-size:.82rem}
+.subnav-inner a:hover,.subnav-inner a.active{color:var(--green);border-color:rgba(166,255,47,.22);background:rgba(166,255,47,.04)}
+
+.content-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.content-card{padding:28px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(145deg,#101410,#090b09)}
+.content-card b{display:block;color:var(--green);font-size:.72rem;letter-spacing:.1em}
+.content-card h3{margin:13px 0 8px}.content-card p{color:var(--muted)}
+.curriculum-list{display:grid;gap:12px}
+.module{display:grid;grid-template-columns:58px 1fr auto;gap:15px;align-items:center;padding:19px;border:1px solid var(--line);border-radius:17px;background:rgba(255,255,255,.018)}
+.module-num{color:var(--green);font-weight:900}.module small{display:block;color:var(--muted);margin-top:3px}.module-tag{font-size:.68rem;color:#7f8c7b;border:1px solid var(--line);border-radius:999px;padding:6px 9px}
+.lab-flow{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.lab-node{padding:22px 15px;border:1px solid var(--line);border-radius:18px;text-align:center;background:rgba(255,255,255,.018)}
+.lab-node b{display:block;color:var(--green);font-size:.72rem}.lab-node strong{display:block;margin-top:12px}.lab-node small{display:block;color:var(--muted);margin-top:5px}
+.project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.project-card{min-height:220px;padding:26px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(145deg,#111611,#090b09)}
+.project-card .project-icon{font-size:2rem}.project-card h3{margin:20px 0 8px}.project-card p{color:var(--muted)}
+.cta-panel{margin-top:30px;padding:34px;border:1px solid rgba(166,255,47,.22);border-radius:24px;background:rgba(166,255,47,.035);display:flex;align-items:center;justify-content:space-between;gap:25px}
+.cta-panel p{color:var(--muted);margin-top:5px}.center-action{text-align:center;margin-top:28px}
+
+@media(max-width:900px){
+  .nav-dropdown{height:auto;display:block}
+  .nav-parent{padding:12px 0}
+  .nav-menu{position:static;display:none;opacity:1;visibility:visible;transform:none;box-shadow:none;background:rgba(255,255,255,.02);border-radius:12px;padding:5px 10px;margin-bottom:5px}
+  .nav-dropdown:hover .nav-menu,.nav-dropdown:focus-within .nav-menu{display:block}
+  .page-hero-grid{grid-template-columns:1fr}.page-hero{padding:70px 0 55px}
+  .lab-flow{grid-template-columns:1fr 1fr}.project-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:560px){
+  .page-hero h1{font-size:clamp(2.8rem,14vw,4.5rem)}
+  .page-visual{min-height:280px}.midi-console{inset:55px 20px 40px;gap:9px}.midi-panel{padding:10px}.midi-keys{height:100px}.pad-grid{gap:4px;margin-top:16px}
+  .content-grid,.project-grid,.lab-flow{grid-template-columns:1fr}.module{grid-template-columns:42px 1fr}.module-tag{display:none}
+  .cta-panel{flex-direction:column;align-items:flex-start}.academy-journey-home .section-heading{margin-bottom:25px}
+}
+.journey-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.journey-card{min-height:165px;padding:20px 15px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.018);transition:.25s}
+.journey-card:hover{transform:translateY(-5px);border-color:rgba(166,255,47,.3)}
+.journey-card b{color:var(--green);font-size:.72rem}.journey-card strong{display:block;margin:28px 0 7px;font-size:1.05rem}.journey-card small{color:var(--muted)}
+@media(max-width:900px){.journey-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:560px){.journey-grid{grid-template-columns:1fr 1fr}.journey-card{min-height:145px}}
+
+.course-duration{padding-top:30px}
+.duration-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.duration-card{padding:24px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(145deg,#101510,#090b09)}
+.duration-card b{display:block;color:var(--green);font-size:.75rem;letter-spacing:.11em}
+.duration-card strong{display:block;margin:14px 0 7px;font-size:1.05rem}
+.duration-card small{color:var(--muted);line-height:1.5}
+.duration-note{margin-top:15px;color:#707a6e;font-size:.75rem}
+.duration-inline{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 18px}
+.duration-inline span{padding:11px 14px;border:1px solid rgba(166,255,47,.18);border-radius:999px;background:rgba(166,255,47,.035);color:#aab4a5;font-size:.8rem}
+.duration-inline b{color:var(--green);margin-right:4px}
+.duration-banner{margin:0 0 22px;padding:20px 23px;border:1px solid rgba(166,255,47,.22);border-radius:20px;background:rgba(166,255,47,.035);display:flex;align-items:center;justify-content:space-between;gap:20px}
+.duration-banner strong{display:block;font-size:1.1rem;margin-top:5px}
+@media(max-width:900px){.duration-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.duration-grid{grid-template-columns:1fr 1fr}.duration-card{padding:18px}.duration-banner{flex-direction:column;align-items:flex-start}}
