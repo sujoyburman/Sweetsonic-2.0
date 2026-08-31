@@ -28,3 +28,5 @@ function rotateHeroWords(){
 if (heroWords.length > 1 && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
   setInterval(rotateHeroWords, 3000);
 }
+
+// v3.5.4: only one hero stage is active at a time on all screen sizes.

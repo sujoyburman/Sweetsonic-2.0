@@ -73,8 +73,6 @@ footer{border-top:1px solid var(--line);padding:28px 0}.footer-inner{display:fle
 
 
 
-/* v3.5.2 safety fallback: show the first hero word even before JavaScript runs */
-.hero-word:first-child{height:clamp(62px,8.2vw,110px);opacity:1;transform:none}
 
 /* SweetSonic v3.5.1 — Sound → Signal → Technology → Creativity */
 .hero-title{
@@ -170,6 +168,32 @@ footer{border-top:1px solid var(--line);padding:28px 0}.footer-inner{display:fle
   .academy-gallery{grid-template-columns:1fr}.academy-main{min-height:260px}
   .studio-photo-grid{min-height:390px}
 }
+
+/* SweetSonic v3.5.4 — Mobile Experience Refinement */
+@media(max-width:560px){
+  .hero{padding-top:34px;padding-bottom:48px;gap:12px}
+  .hero-title{min-height:132px;margin-top:2px}
+  .hero-word{gap:9px;transform:translateY(18px) scale(.985)}
+  .hero-word.active{height:78px;transform:none}
+  .hero-word .word-main{font-size:clamp(3rem,16vw,4.7rem);letter-spacing:-.075em}
+  .word-signal{width:104px;height:52px;margin-left:0}
+  .word-signal i{width:3px}
+  .tech-circuit{width:100px;height:54px;margin-left:0}
+  .word-heart{font-size:3.25rem;margin-left:0}
+  .hero-word[data-stage="creativity"]:after{bottom:-1px;width:52%}
+  .hero-lead{font-size:1rem;line-height:1.55;margin-top:6px}
+  .actions{margin-top:20px;gap:10px}
+  .btn{padding:13px 17px}
+  .micro-proof{margin-top:20px;gap:9px;font-size:.84rem}
+  .hero-visual{min-height:300px;margin-top:0}
+  .visual-card{height:285px;padding:21px;border-radius:26px}
+  .visual-card:before{inset:12px;border-radius:19px}
+  .wave{height:105px;margin-top:16px;gap:6px}
+  .mini-grid{left:21px;right:21px;bottom:20px;gap:7px}
+  .mini-grid div{padding:8px 9px;border-radius:11px}
+  .signal-labels{font-size:.58rem}
+}
+
 @media(max-width:560px){
   .ecosystem-gallery{grid-template-columns:1fr}.ecosystem-gallery figure,.ecosystem-gallery figure:first-child{height:220px}
   .studio-photo-grid{grid-template-columns:1fr;grid-template-rows:220px 140px 140px;min-height:0}.studio-photo-main{grid-row:auto}
@@ -183,7 +207,7 @@ footer{border-top:1px solid var(--line);padding:28px 0}.footer-inner{display:fle
 }
 
 @media(max-width:560px){
-  .hero-title{min-height:175px}
+  .hero-title{min-height:132px}
   .hero-word .word-main{font-size:clamp(3rem,17vw,5rem)}
   .word-signal{width:105px;height:55px;gap:3px}
   .word-signal i{width:3px}

@@ -28,3 +28,5 @@ v3.5 — Motion + Brand Color Upgrade: animated Sound → Technology → Creativ
 
 - v3.5.3: added image-rich ecosystem and MIDI Academy galleries, studio photography, a Record → Edit → Mix → Master flow, and a distinct circuit-style Technology animation.
 - Photo assets are loaded from Unsplash-hosted images under the Unsplash License.
+
+- v3.5.4: mobile hero refined; removed the CSS fallback that caused Sound and Creativity to appear together, tightened spacing, and reduced the hero signal card on phones.
