@@ -1,4 +1,4 @@
-SweetSonic Website Build 3.4 — Phase 1 Conversion + Experience Upgrade
+SweetSonic Website Build 3.5.1 — Phase 1 Conversion + Experience Upgrade
 
 Changes:
 - Uses the latest supplied SweetSonic logo.
@@ -18,3 +18,13 @@ Next phases:
 4. Replace generic imagery with SweetSonic-owned visuals.
 5. Forms, WhatsApp, analytics and conversion tracking.
 6. SEO and search-focused landing pages.
+
+
+v3.5 — Motion + Brand Color Upgrade: animated Sound → Technology → Creativity hero sequence with restrained red accents.
+
+- v3.5.1: upgraded hero motion so Sound visibly generates an animated signal, Technology uses a digital signal treatment, and Creativity resolves with the red heart accent.
+
+- v3.5.2: fixed duplicate hero JavaScript declaration that prevented all reveal animations from running; added a CSS fallback so the hero is visible even before JavaScript executes.
+
+- v3.5.3: added image-rich ecosystem and MIDI Academy galleries, studio photography, a Record → Edit → Mix → Master flow, and a distinct circuit-style Technology animation.
+- Photo assets are loaded from Unsplash-hosted images under the Unsplash License.

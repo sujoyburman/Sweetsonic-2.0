@@ -12,3 +12,19 @@ const observer=new IntersectionObserver(entries=>{
 },{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
 document.getElementById('year').textContent=new Date().getFullYear();
+
+
+// SweetSonic v3.5.2 hero motion: Sound → Technology → Creativity
+const heroWords = document.querySelectorAll('.hero-word');
+let heroIndex = 0;
+
+function rotateHeroWords(){
+  heroWords.forEach((word, i) => {
+    word.classList.toggle('active', i === heroIndex);
+  });
+  heroIndex = (heroIndex + 1) % heroWords.length;
+}
+
+if (heroWords.length > 1 && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  setInterval(rotateHeroWords, 3000);
+}
