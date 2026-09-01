@@ -1,10 +1,14 @@
-SweetSonic Website Build 3.7 — MIDI Academy Duration Update
+SweetSonic v3.9 — MIDI Academy Admin + Student Desk
 
-Based on v3.6 MIDI Academy build.
+NEW STUDENT PORTAL
+- midi-student.html provides a student login and dashboard.
+- Students can see their batch/slot, faculty, start date, 12-week/24-session plan, session progress, and upload minor project file metadata.
+- Demo login: SS-MIDI-123456 / demo@example.com
+- Approved, Payment Pending, Paid, and Enrolled records can access the prototype portal.
 
-Duration update:
-- Added a prominent Course Duration section to the MIDI Academy overview.
-- Recommended format: 12 weeks, 2 sessions/week, 2 hours/session, approximately 48 guided contact hours.
-- Added 12-week / 24-session / 48-hour summary to the curriculum page.
-- Added duration summary to Fees & Enrolment.
-- Duration is explicitly labelled as a recommended website course structure because the retrieved legacy MIDI courseware artifacts specify the curriculum but do not state a definitive duration.
+ADMIN
+- midi-admin.html remains the admin student desk.
+- Application records currently use browser localStorage. This is a prototype only.
+
+PRODUCTION NEXT STEP
+Use a secure backend/database and authenticated student/admin accounts. Store files in secure object storage, enforce authorization per student, and connect the payment gateway server-side. Do not use localStorage for production student PII or coursework.

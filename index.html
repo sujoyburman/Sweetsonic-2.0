@@ -7,6 +7,7 @@
   <meta name="theme-color" content="#050605">
   <title>SweetSonic — Sound. Technology. Creativity.</title>
   <link rel="stylesheet" href="styles.css">
+<script src="sweetsonic-payment.js" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -29,6 +30,7 @@
           </div>
         </div>
         <a href="index.html#ecosystem">Technology</a><a href="index.html#studio">Studio</a>
+        <a href="instrument-service.html">Service</a>
         <a href="index.html#biotune">BioTune</a>
         <a href="index.html#contact" class="nav-cta">Let's Talk</a>
       </nav>
@@ -129,6 +131,13 @@
             <p>Researching the relationship between sound, frequency, sensing and human wellbeing.</p>
             <a href="#biotune">Explore BioTune →</a>
           </article>
+          <article class="eco-card reveal service-eco-card">
+            <div class="card-number">04</div>
+            <div class="icon">🔧</div>
+            <h3>Instrument & Tech Service</h3>
+            <p>Repair, restore, calibrate and configure keyboards, MIDI controllers and music technology.</p>
+            <a href="instrument-service.html">Explore Service →</a>
+          </article>
         </div>
 
       <div class="ecosystem-gallery reveal">
@@ -221,10 +230,36 @@
       </div>
     </section>
 
+    <section id="service" class="section service-section">
+      <div class="container service-home-grid">
+        <div class="service-console reveal">
+          <div class="service-console-top"><span>SWEETSONIC / SERVICE DESK</span><span class="service-status"><i></i> READY</span></div>
+          <div class="service-device">
+            <div class="device-screen"><small>DIAGNOSTIC</small><strong>MIDI / USB</strong><em>SIGNAL OK</em></div>
+            <div class="device-controls"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          </div>
+          <div class="service-readout"><span>KEYS</span><b>✓</b><span>ENCODERS</span><b>✓</b><span>MIDI</span><b>✓</b><span>USB</span><b>✓</b></div>
+        </div>
+        <div class="reveal">
+          <p class="eyebrow">05 / INSTRUMENT & MUSIC TECHNOLOGY SERVICE</p>
+          <h2>Keep your gear<br><span>in the groove.</span></h2>
+          <p class="lead">Specialist diagnosis, repair, calibration and configuration for keyboards, MIDI controllers and studio technology.</p>
+          <div class="service-pill-row"><span>Arturia</span><span>Novation</span><span>Akai</span><span>Roland</span><span>+ more</span></div>
+          <div class="service-mini-grid">
+            <div><b>₹499</b><small>Basic diagnosis</small></div>
+            <div><b>₹699</b><small>MIDI controller diagnosis</small></div>
+            <div><b>₹199</b><small>Pickup / drop from</small></div>
+          </div>
+          <a class="btn btn-primary" href="instrument-service.html">Request a service →</a>
+          <a class="text-link" href="instrument-service.html">See services & pricing</a>
+        </div>
+      </div>
+    </section>
+
     <section id="biotune" class="section bio-section">
       <div class="container">
         <div class="section-heading reveal">
-          <div><p class="eyebrow">INNOVATION / BIOTUNE</p><h2>Sound, frequency & <span>human wellbeing.</span></h2></div>
+          <div><p class="eyebrow">06 / INNOVATION / BIOTUNE</p><h2>Sound, frequency & <span>human wellbeing.</span></h2></div>
           <p>Exploratory R&D — with evidence before claims.</p>
         </div>
         <div class="biotune-visual reveal" aria-label="Animated BioTune frequency visualization">
@@ -276,7 +311,7 @@
 
     <section id="contact" class="section contact">
       <div class="container contact-card reveal">
-        <p class="eyebrow">05 / LET'S TALK</p>
+        <p class="eyebrow">07 / LET'S TALK</p>
         <h2>Have an idea?<br><span>Let's make it sonic.</span></h2>
         <p>Music, MIDI, studio, innovation or a new idea — tell us what you're building.</p>
         <div class="contact-actions">
@@ -291,9 +326,18 @@
   <footer>
     <div class="container footer-inner">
       <img src="assets/SweetSonicLogo.jpg" alt="SweetSonic" class="footer-logo">
-      <div><span>Music • Education • Studio • Innovation</span><small>© <span id="year"></span> SweetSonic</small></div>
+      <div><span>Music • Education • Studio • Service • Innovation</span><small>© <span id="year"></span> SweetSonic</small></div>
     </div>
   </footer>
   <script src="script.js"></script>
+
+<div class="sweetsonic-payment-cta" style="margin:16px 0;">
+  <button type="button"
+    onclick="SweetSonicPayment.startCheckout({amount:49999,item:'MIDI Academy Course'})"
+    style="cursor:pointer;padding:12px 22px;border:0;border-radius:8px;font-weight:700;">
+    Pay Online — MIDI Academy ₹49,999
+  </button>
+</div>
+
 </body>
 </html>

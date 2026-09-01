@@ -1,0 +1,19 @@
+SweetSonic v4.1 Payment Integration
+=====================================
+
+This build is payment-ready and includes a checkout integration layer plus
+a MIDI Academy online-payment CTA.
+
+IMPORTANT:
+The included checkout handler is intentionally a safe placeholder. Do not
+put Razorpay/other secret keys in browser JavaScript.
+
+Production connection should use a server-side payment gateway flow:
+1. Create an order on the server.
+2. Open the gateway checkout on the client.
+3. Verify the payment signature on the server.
+4. Record the successful payment/enrollment.
+5. Send confirmation/receipt.
+
+Suggested gateway for the India-first SweetSonic site: Razorpay, with UPI,
+cards, net banking and wallets where enabled on the merchant account.

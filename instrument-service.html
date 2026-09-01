@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="SweetSonic Instrument & Music Technology Service — repair, restore, calibrate and configure musical instruments and music technology.">
+  <meta name="theme-color" content="#050605">
+  <title>SweetSonic — Instrument & Music Technology Service</title>
+  <link rel="stylesheet" href="styles.css">
+<script src="sweetsonic-payment.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html#home" aria-label="SweetSonic home"><img src="assets/SweetSonicLogo.jpg" alt="SweetSonic logo"></a>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#ecosystem">Ecosystem</a>
+      <div class="nav-dropdown">
+        <a class="nav-parent" href="midi-academy.html">MIDI Academy <span>⌄</span></a>
+        <div class="nav-menu">
+          <a href="midi-academy.html">Academy Overview</a><a href="midi-curriculum.html">Course Curriculum</a><a href="midi-lab.html">MIDI Lab</a><a href="midi-projects.html">Practical Projects</a><a href="midi-enrol.html">Fees & Enrolment</a>
+        </div>
+      </div>
+      <a href="index.html#studio">Studio</a><a href="instrument-service.html">Service</a><a href="index.html#biotune">BioTune</a>
+      <a href="index.html#contact" class="nav-cta">Let's Talk</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero service-hero">
+    <div class="container">
+      <p class="page-kicker">SWEETSONIC / INSTRUMENT & MUSIC TECHNOLOGY SERVICE</p>
+      <h1>Repair. Restore.<br><span>Get back to making music.</span></h1>
+      <p class="lead">Specialist diagnosis, repair, calibration and configuration for keyboards, digital pianos, MIDI controllers and studio technology.</p>
+      <div class="service-hero-actions"><a class="btn btn-primary" href="#service-form">Request a Service →</a><a class="btn btn-ghost" href="mailto:info@sweetsonic.in?subject=SweetSonic%20Instrument%20Service%20Enquiry">Email SweetSonic</a></div>
+      <div class="service-trust"><span>🎹 Musician-led</span><span>🔧 Diagnosis first</span><span>🧪 Transparent estimates</span><span>🚚 Pickup / drop available</span></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container service-layout">
+      <div>
+        <div class="section-heading reveal"><div><p class="eyebrow">WHAT WE SERVICE</p><h2>Music gear deserves<br><span>specialist care.</span></h2></div><p>From a faulty key to a jumping encoder or MIDI connection problem, we start by finding the real fault.</p></div>
+        <div class="service-grid">
+          <article class="service-card reveal"><div class="service-icon">🎹</div><h3>Keyboard & Digital Piano</h3><p>Key response, velocity, sustain, contacts, controls and general servicing.</p></article>
+          <article class="service-card reveal"><div class="service-icon">🎛️</div><h3>MIDI Controllers</h3><p>Keys, pads, knobs, faders, encoders, buttons and MIDI behaviour.</p></article>
+          <article class="service-card reveal"><div class="service-icon">🔌</div><h3>MIDI / USB & Connectivity</h3><p>Connection faults, routing problems and controller communication issues.</p></article>
+          <article class="service-card reveal"><div class="service-icon">🧰</div><h3>Electronic Repair</h3><p>Component, board-level and hardware faults assessed after inspection.</p></article>
+          <article class="service-card reveal"><div class="service-icon">🎚️</div><h3>Calibration & Maintenance</h3><p>Controls, keys and performance behaviour checked and adjusted where practical.</p></article>
+          <article class="service-card reveal"><div class="service-icon">💻</div><h3>Music-Tech Configuration</h3><p>DAW, MIDI mapping, software and studio integration support.</p></article>
+        </div>
+        <div class="service-brand-card reveal"><strong>BRANDS WE CAN SUPPORT</strong><div class="service-brand-list"><span>Arturia</span><span>Novation</span><span>Akai</span><span>Roland</span><span>Yamaha</span><span>Korg</span><span>M-Audio</span><span>Native Instruments</span><span>and others</span></div></div>
+
+        <div id="service-form" class="service-form-section reveal">
+          <div class="section-heading"><div><p class="eyebrow">REQUEST A SERVICE</p><h2>Tell us what's<br><span>going wrong.</span></h2></div><p>Share the instrument details and fault. Photos or a short video can help us assess the issue before inspection.</p></div>
+          <form class="service-form" id="serviceRequestForm">
+            <div class="service-form-grid">
+              <div><label for="customerName">Your name</label><input id="customerName" name="name" required></div>
+              <div><label for="customerPhone">Phone / WhatsApp</label><input id="customerPhone" name="phone" type="tel" required></div>
+              <div><label for="instrumentType">Instrument / equipment</label><select id="instrumentType" name="instrument"><option value="">Select one</option><option>Keyboard / Digital Piano</option><option>MIDI Controller</option><option>Audio Interface</option><option>Studio Equipment</option><option>Other Music Technology</option></select></div>
+              <div><label for="brandModel">Brand & model</label><input id="brandModel" name="model" placeholder="e.g. Arturia KeyLab MkII"></div>
+              <div class="full-field"><label for="fault">Describe the problem</label><textarea id="fault" name="fault" required placeholder="What is happening? When did it start? Any error messages or unusual behaviour?"></textarea></div>
+              <div class="full-field"><label for="location">Pickup / service location</label><input id="location" name="location" placeholder="Area / locality"></div>
+            </div>
+            <button class="btn btn-primary" type="submit">Send Service Request →</button>
+            <p class="form-note">This prototype opens your email client with the service details. A secure online service desk can be connected in a future backend release.</p>
+          </form>
+        </div>
+      </div>
+
+      <aside class="service-pricing reveal">
+        <p class="eyebrow">INITIAL LAUNCH PRICING</p>
+        <h3>Transparent starting rates</h3>
+        <p>Final repair estimate follows inspection. Parts are additional unless included in the quote.</p>
+        <div class="price-list">
+          <div class="price-line"><span>Basic inspection / diagnosis</span><strong>₹499</strong></div>
+          <div class="price-line"><span>MIDI controller diagnosis</span><strong>₹699</strong></div>
+          <div class="price-line"><span>Keyboard / digital piano diagnosis</span><strong>₹799</strong></div>
+          <div class="price-line"><span>Electronic / board diagnosis</span><strong>₹999+</strong></div>
+          <div class="price-line"><span>Minor repair / adjustment</span><strong>₹500+</strong></div>
+          <div class="price-line"><span>Encoder / knob / switch work</span><strong>₹800+</strong></div>
+          <div class="price-line"><span>Key / velocity / contact work</span><strong>₹800+</strong></div>
+          <div class="price-line"><span>MIDI / USB repair</span><strong>₹1,000+</strong></div>
+          <div class="price-line"><span>Board-level repair</span><strong>₹1,500+</strong></div>
+          <div class="price-line"><span>DAW / MIDI configuration</span><strong>₹750+</strong></div>
+        </div>
+        <a class="btn btn-primary full" href="#service-form">Get an estimate →</a>
+        <p class="fine-print">Diagnosis fee can be adjusted against the repair bill when you proceed with an eligible repair. Complex repairs and specialist parts are quoted after inspection.</p>
+        <div class="pickup-card"><strong>🚚 Pickup & Drop</strong><p>Convenient local collection and return service.</p><div class="pickup-rates"><div><b>₹199</b><small>0–5 km</small></div><div><b>₹299</b><small>5–10 km</small></div><div><b>₹499</b><small>10–20 km</small></div></div><p>For eligible higher-value repairs, SweetSonic may offer complimentary pickup and delivery.</p></div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section dark-band">
+    <div class="container proof-grid">
+      <div class="reveal"><p class="eyebrow">THE SWEETSONIC DIFFERENCE</p><h2>We're musicians fixing <span>musicians' gear.</span></h2></div>
+      <div class="promise-list reveal"><p><b>01</b> Diagnose before replacing</p><p><b>02</b> Explain the fault clearly</p><p><b>03</b> Quote before major work</p><p><b>04</b> Test before return</p></div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="container footer-inner"><img src="assets/SweetSonicLogo.jpg" alt="SweetSonic" class="footer-logo"><div><span>Music • Education • Studio • Service • Innovation</span><small>© <span id="year"></span> SweetSonic</small></div></div></footer>
+<script src="script.js"></script>
+<script>
+document.getElementById('serviceRequestForm')?.addEventListener('submit', function(e){
+  e.preventDefault();
+  const f=new FormData(this);
+  const subject=encodeURIComponent('SweetSonic Instrument Service Request — '+(f.get('model')||f.get('instrument')||'Equipment'));
+  const body=encodeURIComponent(
+    'Name: '+f.get('name')+'\nPhone / WhatsApp: '+f.get('phone')+'\nInstrument: '+f.get('instrument')+'\nBrand & Model: '+f.get('model')+'\nProblem: '+f.get('fault')+'\nPickup / Service Location: '+f.get('location')
+  );
+  window.location.href='mailto:info@sweetsonic.in?subject='+subject+'&body='+body;
+});
+</script>
+
+<div class="sweetsonic-payment-cta" style="margin:16px 0;">
+  <button type="button"
+    onclick="SweetSonicPayment.startCheckout({amount:49999,item:'MIDI Academy Course'})"
+    style="cursor:pointer;padding:12px 22px;border:0;border-radius:8px;font-weight:700;">
+    Pay Online — MIDI Academy ₹49,999
+  </button>
+</div>
+
+</body>
+</html>

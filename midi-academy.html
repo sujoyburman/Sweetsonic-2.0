@@ -1,6 +1,7 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="SweetSonic MIDI Academy — practical MIDI, DAWs, controllers and music production courseware.">
-<meta name="theme-color" content="#050605"><title>MIDI Academy — SweetSonic</title><link rel="stylesheet" href="styles.css"></head><body>
+<meta name="theme-color" content="#050605"><title>MIDI Academy — SweetSonic</title><link rel="stylesheet" href="styles.css"><script src="sweetsonic-payment.js" defer></script>
+</head><body>
 <header class="site-header">
   <div class="container nav">
     <a class="brand" href="index.html#home" aria-label="SweetSonic home"><img src="assets/SweetSonicLogo.jpg" alt="SweetSonic logo"></a>
@@ -64,4 +65,13 @@
 </div>
 <div class="cta-panel reveal"><div><h3>Ready to see the complete syllabus?</h3><p>Explore the modules from foundation through advanced production.</p></div><a class="btn btn-primary" href="midi-curriculum.html">View Course Curriculum →</a></div>
 </div></section>
-</main><footer><div class="container footer-inner"><img src="assets/SweetSonicLogo.jpg" alt="SweetSonic" class="footer-logo"><div><span>Music • Education • Studio • Innovation</span><small>© <span id="year"></span> SweetSonic</small></div></div></footer><script src="script.js"></script></body></html>
+</main><footer><div class="container footer-inner"><img src="assets/SweetSonicLogo.jpg" alt="SweetSonic" class="footer-logo"><div><span>Music • Education • Studio • Innovation</span><small>© <span id="year"></span> SweetSonic</small></div></div></footer><script src="script.js"></script>
+<div class="sweetsonic-payment-cta" style="margin:16px 0;">
+  <button type="button"
+    onclick="SweetSonicPayment.startCheckout({amount:49999,item:'MIDI Academy Course'})"
+    style="cursor:pointer;padding:12px 22px;border:0;border-radius:8px;font-weight:700;">
+    Pay Online — MIDI Academy ₹49,999
+  </button>
+</div>
+
+</body></html>

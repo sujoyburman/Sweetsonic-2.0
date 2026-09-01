@@ -1,0 +1,26 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#050605"><title>MIDI Academy Payment — SweetSonic</title><link rel="stylesheet" href="styles.css"><script src="sweetsonic-payment.js" defer></script>
+</head><body>
+<header class="site-header"><div class="container nav"><a class="brand" href="index.html"><img src="assets/SweetSonicLogo.jpg" alt="SweetSonic logo"></a><a class="btn btn-ghost" href="midi-enrol.html">← Back to Enrolment</a></div></header>
+<main><section class="page-hero compact-hero"><div class="container narrow">
+<p class="page-kicker">MIDI ACADEMY / STEP 03</p><h1>Complete your <span>enrolment.</span></h1><p class="lead">Payment is available after SweetSonic confirms your application and shares your secure payment link.</p>
+<div class="payment-card">
+<div class="secure-line"><span>🔒</span><strong>Secure payment</strong><small>Powered by your selected payment gateway</small></div>
+<label>Application ID<input id="paymentApplicationId" placeholder="SS-MIDI-123456"></label>
+<label>Amount confirmed by SweetSonic<input id="paymentAmount" placeholder="₹49,999" inputmode="numeric"></label>
+<div class="payment-status" id="paymentStatus"><b>Payment link required</b><span>For security, the payment link is issued only after your application is approved.</span></div>
+<button id="payButton" class="btn btn-primary form-submit" type="button" disabled>Pay Securely →</button>
+<p class="form-note">If you have received a payment link from SweetSonic, open that link directly. Do not enter card or UPI credentials on this website.</p>
+</div>
+<div class="payment-help"><strong>Need help?</strong> Email <a href="mailto:info@sweetsonic.in">info@sweetsonic.in</a> with your application ID.</div>
+</div></section></main>
+<footer><div class="container footer-inner"><img src="assets/SweetSonicLogo.jpg" alt="SweetSonic" class="footer-logo"><div><span>Music • Education • Studio • Innovation</span><small>© <span id="year"></span> SweetSonic</small></div></div></footer>
+<script src="script.js"></script><script src="midi-flow.js"></script>
+<div class="sweetsonic-payment-cta" style="margin:16px 0;">
+  <button type="button"
+    onclick="SweetSonicPayment.startCheckout({amount:49999,item:'MIDI Academy Course'})"
+    style="cursor:pointer;padding:12px 22px;border:0;border-radius:8px;font-weight:700;">
+    Pay Online — MIDI Academy ₹49,999
+  </button>
+</div>
+
+</body></html>
