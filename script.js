@@ -30,3 +30,18 @@ if (heroWords.length > 1 && !window.matchMedia('(prefers-reduced-motion: reduce)
 }
 
 // v3.5.4: only one hero stage is active at a time on all screen sizes.
+
+
+// Public v2.0 hero media: rotate real music / gear / people imagery while keeping
+// the Sound → Technology → Creativity text animation unchanged.
+const heroSlides = document.querySelectorAll('.hero-slide');
+const heroDots = document.querySelectorAll('.hero-slide-dots i');
+let heroSlideIndex = 0;
+function rotateHeroSlides(){
+  heroSlides.forEach((slide,i)=>slide.classList.toggle('active', i===heroSlideIndex));
+  heroDots.forEach((dot,i)=>dot.classList.toggle('active', i===heroSlideIndex));
+  heroSlideIndex=(heroSlideIndex+1)%heroSlides.length;
+}
+if(heroSlides.length>1 && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+  setInterval(rotateHeroSlides, 4200);
+}
