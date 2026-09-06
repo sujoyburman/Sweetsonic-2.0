@@ -1,0 +1,47 @@
+const menu=document.querySelector('.menu-toggle');
+const links=document.querySelector('.nav-links');
+if(menu){
+  menu.addEventListener('click',()=>{
+    const open=links.classList.toggle('open');
+    menu.setAttribute('aria-expanded',open);
+  });
+}
+links?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')});
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+document.getElementById('year').textContent=new Date().getFullYear();
+
+
+// SweetSonic v3.5.2 hero motion: Sound → Technology → Creativity
+const heroWords = document.querySelectorAll('.hero-word');
+let heroIndex = 0;
+
+function rotateHeroWords(){
+  heroWords.forEach((word, i) => {
+    word.classList.toggle('active', i === heroIndex);
+  });
+  heroIndex = (heroIndex + 1) % heroWords.length;
+}
+
+if (heroWords.length > 1 && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  setInterval(rotateHeroWords, 3000);
+}
+
+// v3.5.4: only one hero stage is active at a time on all screen sizes.
+
+
+// Public v2.0 hero media: rotate real music / gear / people imagery while keeping
+// the Sound → Technology → Creativity text animation unchanged.
+const heroSlides = document.querySelectorAll('.hero-slide');
+const heroDots = document.querySelectorAll('.hero-slide-dots i');
+let heroSlideIndex = 0;
+function rotateHeroSlides(){
+  heroSlides.forEach((slide,i)=>slide.classList.toggle('active', i===heroSlideIndex));
+  heroDots.forEach((dot,i)=>dot.classList.toggle('active', i===heroSlideIndex));
+  heroSlideIndex=(heroSlideIndex+1)%heroSlides.length;
+}
+if(heroSlides.length>1 && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+  setInterval(rotateHeroSlides, 4200);
+}
