@@ -1,3 +1,6 @@
-# SweetSonic 2.0 Logo Standard
+# SweetSonic 2.0 — Approved Logo Standard
 
-All public HTML pages use `assets/SweetSonicLogo.jpg` as the single canonical SweetSonic logo asset. Legacy logo assets remain in `assets/` for reference only.
+The supplied SweetSonic logo is the canonical branding asset for this frozen build.
+Canonical asset: `assets/SweetSonicLogo.jpg`
+All HTML pages reference the canonical asset with a cache-busting version parameter.
+Obsolete duplicate logo assets were removed from the public build.
