@@ -1,0 +1,12 @@
+SweetSonic 2.5 — BioTune™ Branding Update
+
+Based on the SweetSonic 2.4 BioTune product-line build.
+
+Changes:
+- Standardized public-facing BioTune branding to BioTune™ across site text and supporting documentation.
+- Applied provisional marks to proposed product-line names: BioTune Sense™, BioTune AI™, BioTune Audio™, and BioTune Clinical™.
+- Retained existing homepage structure, illustrations, product-line concepts, and transparency language.
+
+Trademark note: ™ indicates a claimed trademark; it does not mean registration has been granted. Product-line names are provisional and availability has not been checked. Use ® only after confirming registration for the relevant goods/services and jurisdiction.
+
+This is a development build. It has not been deployed to the live website.

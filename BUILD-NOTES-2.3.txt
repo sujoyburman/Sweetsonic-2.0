@@ -1,0 +1,14 @@
+SweetSonic 2.3 — BioTune™-first homepage concept build
+
+Changes:
+- Repositioned BioTune™ as the homepage/landing-page hero.
+- Uses the supplied BioTune™ clinical workflow illustration as a clearly labelled future-use concept.
+- Retains the earlier BioTune™ concept illustration and transparency messaging.
+- Adds a proposed software + wearable product-line section, clearly marked as planning concepts, not current product capabilities.
+- Keeps Academy pages available as separate destinations; BioTune™ has not been integrated into Academy content in this phase.
+
+Testing:
+Open index.html locally in a modern browser. Check desktop and mobile widths, navigation, images, and any existing links.
+
+Important:
+This is a development build, not deployed. Keep the frozen SweetSonic 2.0 live baseline unchanged until the build is reviewed and approved. Product capabilities and any medical claims must be established through requirements, testing, evidence and appropriate regulatory review.

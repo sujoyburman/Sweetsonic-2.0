@@ -1,0 +1,17 @@
+SweetSonic 2.4 — BioTune™ Product Line Homepage Update
+
+Changes:
+- Keeps BioTune™ as the homepage/landing-page focus.
+- Expands the proposed product-line section into four clearly labelled planning concepts: BioTune™ Sense, BioTune™ AI, BioTune™ Audio, and BioTune™ Clinical.
+- Adds responsive four-card, two-card, and single-card layouts for desktop, tablet, and mobile.
+- Keeps the product line explicitly aspirational: no claims that products or clinical capabilities currently exist.
+- Retains previous BioTune™ illustrations, explanatory copy, transparency statements, and existing Academy pages.
+
+Testing:
+- Open index.html in a modern browser.
+- Check the product line at desktop, tablet, and mobile widths.
+- Confirm the images, navigation, and existing Academy links.
+
+Important:
+- This is a development build, not deployed. Keep the frozen SweetSonic 2.0 live baseline unchanged until review and approval.
+- Product names are provisional. Intended use, sensor selection, algorithm behaviour, safety requirements, clinical workflows, evidence and applicable regulatory requirements remain to be established.
